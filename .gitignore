@@ -1,0 +1,37 @@
+# Terraform state CONTAINS THE CLIENT SECRET. Never commit it.
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Real variable values (subscription ID, names). Commit only the example.
+*.tfvars
+*.tfvars.json
+!terraform.tfvars.example
+
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Credentials and test artifacts
+.env
+*.env
+*.pem
+*.pfx
+sp-credentials*
+test-output/
+
+.DS_Store
+
+# Local state backups (contain sensitive data)
+state-backups/
+
+# Evidence screenshots for Canvas (kept out of the public repo)
+screenshots/
+
+# Technical report (submitted through Canvas)
+report/

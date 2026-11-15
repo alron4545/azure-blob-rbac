@@ -1,0 +1,14 @@
+# Copy to terraform.tfvars (git-ignored) and fill in.
+
+# az account show --query id -o tsv
+subscription_id = "00000000-0000-0000-0000-000000000000"
+
+location     = "westus2"
+course       = "it3200"
+student_name = "michael"
+
+# Storage account names are global. If stuvuit3200michael is taken, set one:
+# storage_account_name = "stuvuit3200michael01"
+
+# Part 3: first apply with this set to false, test, then set back to true.
+grant_blob_access = true
